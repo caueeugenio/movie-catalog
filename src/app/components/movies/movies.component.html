@@ -1,0 +1,26 @@
+<div class="main">
+  <header class="text-center">
+    <h1 class="primary-title">Welcome to the Movies Catalog</h1>
+    <button
+      type="button"
+      class="btn btn-success mb-3"
+      (click)="openModal(movies)"
+    >
+      Adicionar filme
+    </button>
+  </header>
+
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div *ngFor="let item of movies" class="col card-movie">
+        <div class="" style="display: flex;">
+          <h3>{{item.title}} | <i class="bi bi-activity" style="color: white;">m</i></h3>
+          <i class="bi bi-activity">d</i>
+          <i class="bi bi-apple" style="color: white;">d</i>
+        </div>
+        <img src="{{ item.url }}" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+</div>
+

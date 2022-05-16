@@ -1,0 +1,27 @@
+
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add a new movie</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="movie">Movie Name</label>
+        <div class="input-group">
+          <input  [(ngModel)]="movieName" type="text" id="movie-name" class="form-control" placeholder="Alladin example" name="dp" >
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="image">Image</label>
+        <div class="input-group">
+          <input [(ngModel)]="imageMovie" type="text" name= "imageMovie" id="movie-url" class="form-control" placeholder="insert the http address image here." name="dp" >
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="addMovie()">Save</button>
+  </div>
+
+
+
